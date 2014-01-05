@@ -44,6 +44,9 @@ setlocale(LC_TIME, "en_EN");
 
 // initialize smarty and siplay the feed
 $smarty = BigaceSmarty::getSmarty();
+
+header("Content-type: text/xml");
+echo '<?xml version="1.0" encoding="UTF-8"?>';
 $smarty->display($SMARTY_TPL->getFilename());
 
 ?>
