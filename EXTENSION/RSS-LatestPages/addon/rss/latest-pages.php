@@ -34,7 +34,7 @@ require_once(dirname(__FILE__).'/../../system/libs/init_session.inc.php');
 import('classes.smarty.BigaceSmarty');
 import('classes.smarty.SmartyTemplate');
 
-header('Content-type: application/rss+xml');
+//header('Content-type: application/rss+xml');
 
 // the template we use to render the rss feed
 $SMARTY_TPL = new SmartyTemplate("RSS-LatestPages"); 

@@ -43,8 +43,9 @@
       <height>Image height in pixel</height>
       <description>Image description</description>
     </image> *}
-	
-    <atom:link href="{directory name="public"}trennkost/feed.php" rel="self" type="application/rss+xml"/>
+
+{* <atom:link href="{link url="/"}latest.xml" rel="self" type="application/rss+xml"/> *}
+    <atom:link href="{directory name="addon"}rss/latest-pages.php" rel="self" type="application/rss+xml"/>
 {configuration package="rss-latest" key="number.of.entries" assign="amount"}
 {last_created_items assign="latest" amount=$amount}
 {foreach from=$latest item="lastCreated"}
